@@ -15,7 +15,7 @@ STORAGE_DIRECTORY = os.environ.get(ENVIRONMENT_VARIABLE, None)
 # -- If we have not been provided with a specific storage location
 # -- then we need to resolve to a default location, but this is platform
 # -- dependent
-if sys.platform == 'linux':
+if sys.platform == 'linux' or sys.platform == 'linux2':
     if 'XDG_CONFIG_HOME' in os.environ:
         STORAGE_DIRECTORY = os.path.join(
             os.environ['XDG_CONFIG_HOME'],
