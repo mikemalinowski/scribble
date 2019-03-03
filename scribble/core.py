@@ -35,6 +35,13 @@ elif sys.platform == 'win32':
         'pyscribble',
     )
 
+elif sys.platform == 'darwin':
+    STORAGE_DIRECTORY = os.path.join(
+        os.environ['HOME'],
+        'Documents',
+        'pyscribble',
+    )
+
 else:
     raise Exception(
         (

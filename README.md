@@ -55,7 +55,7 @@ locations:
 
 * Linux: %XDG_CONFIG_HOME%/pyscribble if the environment variable exists, otherwise %HOME%/.config/pyscribble
 
-* OSX: Not yet given default support
+* OSX: ˜HOME/Documents/pyscribble
 
 However, you can override these paths by setting an environment variable
 PYSCRIBBLE_STORAGE_DIR, if this is set then the path defined by that variable
